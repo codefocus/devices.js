@@ -1,26 +1,26 @@
 var devices = {
 //	Mobile devices
 	useragentsMobile: {
-		"Android":			"Android.*?Mobile",
-		"BlackBerry":		"BlackBerry",
-		"iPhone":			"iPhone",
-		"iPod":				"iPod",
-		"Opera":			"Opera Mini",
-		"Windows":			"IEMobile"
+		"Android":          "Android.*?Mobile",
+		"BlackBerry":       "BlackBerry",
+		"iPhone":           "iPhone",
+		"iPod":             "iPod",
+		"Opera":            "Opera Mini",
+		"Windows":          "IEMobile"
 		
 	},
 //	Tablets
 	useragentsTablet: {
-		"Android":			"Android(?!.*Mobile)",
-		"BlackBerry":		"BlackBerry",
-		"iPad":				"iPad",
-		"Kindle":			"\W(kindle|silk)\W"
+		"Android":          "Android(?!.*Mobile)",
+		"BlackBerry":       "BlackBerry",
+		"iPad":             "iPad",
+		"Kindle":           "\W(kindle|silk)\W"
 	},
 //	Televisions
 	useragentsTv: {
-		"Apple":			"AppleTV",
-		"Google":			"GoogleTV",
-		"Sony":				"SonyDTV"
+		"Apple":            "AppleTV",
+		"Google":           "GoogleTV",
+		"Sony":             "SonyDTV"
 	},
 	
 	isMobile: function(){ return ua.matchUseragents(ua.useragentsMobile); },
