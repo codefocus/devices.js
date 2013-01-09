@@ -1,3 +1,12 @@
+;/**
+ *  devices.js
+ *  
+ *  @author     Codefocus (http://www.codefocus.ca/)
+ *  @license    http://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+ *  @version    0.1
+ *  @link       https://github.com/codefocus/devices.js
+ *  
+ */
 var devices = {
 //	Mobile devices
 	useragentsMobile: {
