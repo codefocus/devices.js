@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> UA test </title>
+</head>
+<body>
+	<h2 id="result"></h2>
+	<p id="ua"></p>
+	<script type="text/javascript" src="devices.js"></script>
+	<script type="text/javascript">
+		document.getElementById('ua').innerHTML = navigator.userAgent;
+		if (ua.isMobile()) {
+			document.getElementById('result').innerHTML = 'Mobile';
+		}
+		else if (ua.isTablet()) {
+			document.getElementById('result').innerHTML = 'Tablet';
+		}
+		else {
+			document.getElementById('result').innerHTML = 'Desktop';
+		}
+	</script>
+</body>
+</html>
